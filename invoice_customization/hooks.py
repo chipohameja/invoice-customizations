@@ -108,6 +108,12 @@ app_license = "MIT"
 #		"on_cancel": "method",
 #		"on_trash": "method"
 #	}
+#    "Sales Invoice": {
+#        "before_save": "invoice_customization.api.calculate_amounts"
+#    }
+#     "Customer": {
+#         "before_insert": "invoice_customization.api.validate_email"
+#     }
 # }
 
 # Scheduled Tasks
